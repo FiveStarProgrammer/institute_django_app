@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+
+    <title></title>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <h2 class = 'text-center'>welcome to NTH</h2>
+    {% block b1 %}
+
+    {% endblock %}
+
+    <div class="  bg-dark mt-3">
+      <div class="row bg-dark text-white">
+        <div class="offset-md-1 col-md-3 mt-5">
+          <h4>GET IN TOUCH</h4> <br>
+          <ul>
+            <li><h5>Narayana Tech House</h5></li>
+            <li><h5>narayana@gmail.com</h5></li>
+            <li><h5>6309814543</h5></li>
+          </ul>
+
+        </div>
+        <div class=" offset-md-1 col-md-3 mt-5">
+          <h4>QUICK LINKS</h4> <br>
+          <ul>
+            <li><a href="https://www.facebook.com/" style = 'font-size:20px' target='blank' class = 'text-white'>facebook</a>  <br></li>
+            <li><a href="https://www.instagram.com" style = 'font-size:20px' target='blank' class = 'text-white'>Instagram</a>  <br></li>
+            <li><a href="https://web.whatsapp.com/" style = 'font-size:20px'target='blank' class = 'text-white'>whatsapp</a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-4 mt-5">
+          <h4>SUBSCRIBE</h4> <br>
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder='enter mail ID' class = 'form-control bg-dark text-white'>
+            <input type="text" name="" value="" placeholder='enter password' class = 'form-control mt-1 bg-dark text-white'>
+            <div class="text-center mt-2">
+              <input type="button" name="" value="SUBSCRIBE" class = 'btn btn-danger form-control bg-dark' style='color:red;'>
+
+            </div>
+          </form>
+
+
+        </div>
+
+      </div>
+      <div class="offset-md-4 col-md-4 text-center text-white">
+        <h4>follow us on social media</h4>
+      </div>
+
+      <div class="offset-md-4 col-md-4 text-center mt-4">
+        <!-- Instagram Icon -->
+        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+            <i class="fab fa-instagram text-white mr-4" style ='font-size:30px;'></i>
+        </a>
+
+        <!-- Facebook Icon -->
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+            <i class="fab fa-facebook text-white mr-4" style ='font-size:30px;'></i>
+        </a>
+
+        <!-- WhatsApp Icon -->
+        <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank" class="social-icon">
+            <i class="fab fa-whatsapp text-white mr-4" style ='font-size:30px;'></i>
+        </a>
+
+      </div>
+      <div class="row text-white offset-md-1 col-md-4">
+        <h5 style='font-size:15px'>All rights reserved @narayana tech house</h5>
+
+      </div>
+  </div>
+
+  </body>
+</html>

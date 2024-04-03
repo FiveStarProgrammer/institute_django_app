@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block b1 %}
+<h1>this is feedbackpage</h1>
+<div class="container-fluid">
+  <div class=" offset-md-4 col-md-4 row">
+    <form class=""  method="post">
+      {% csrf_token %}
+      <textarea name="feed" rows="8" cols="80"></textarea>
+      <div class="text-right">
+        <input type='submit' name="" value="submit" class = 'btn btn-outline-success'>
+        <input type="reset" name="" value="clear" class = 'btn btn-outline-danger'>
+
+      </div>
+    </form>
+    {%if fbs%}
+      {% for i in fbs %}
+      feedback: {{i.feedback}} <br>
+      {% endfor %}
+    {%else%}
+      <h1>no feedback available</h1>
+    {% endif %}
+
+  </div>
+
+</div>
+{% endblock %}
